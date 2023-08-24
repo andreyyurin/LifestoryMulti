@@ -21,7 +21,7 @@ internal fun AuthScreen(
     viewModel: LoginViewModel,
     modifier: Modifier = Modifier
 ) {
-    val state = viewModel.state.collectAsState(initial = LoginScreenState.Content("Dasd"))
+    val state = viewModel.state.collectAsState(initial = LoginScreenState.Content("mocha?"))
 
     when (val stateValue = state.value) {
         LoginScreenState.Loading -> {
@@ -47,8 +47,8 @@ internal fun AuthScreen(
 private fun LoginScreen(navigator: Navigator, onLoginClick: () -> Unit, str: String = "HER") {
     Text(
         text = str,
-        fontSize = 10.sp,
-        color = Color.White,
+        fontSize = 25.sp,
+        color = Color.Black,
         textAlign = TextAlign.Center,
         modifier = Modifier
             .padding(

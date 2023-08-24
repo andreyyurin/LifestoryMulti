@@ -24,5 +24,5 @@ sealed class NavigationScreen(
     val objectName: String = "",
     val objectPath: String = ""
 ) {
-    data object Auth : NavigationScreen("home_screen")
+    data object Auth : NavigationScreen("auth_screen")
 }
